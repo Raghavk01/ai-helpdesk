@@ -1,0 +1,6 @@
+{
+  "name": "Southfield College AI Helpdesk",
+  "description": "Comprehensive 24/7 AI-powered campus helpdesk, grievance ticketing system, academic advising, course catalog, and student services portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
