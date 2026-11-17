@@ -46,34 +46,34 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({ isOpen, onClose 
 
         {/* Hotlines */}
         <div className="py-6 space-y-4 text-xs">
-          {/* Campus Police */}
+          {/* MRU Campus Security & Quick Response */}
           <div className="p-4 border border-[#991b1b]/30 bg-[#fdf2f2] flex items-center justify-between gap-4">
             <div>
               <div className="font-serif-cormorant text-xl font-bold text-[#1a1a1a]">
-                Campus Police & Patrol
+                MRU Security & Quick Response Team
               </div>
               <div className="text-[#666] text-[11px] mt-0.5">
-                Immediate incident response, physical security, escorts
+                Main Gate 1 Control Room, Sector 43 patrol & night escort across Blocks A–S
               </div>
               <div className="font-mono-space text-[#991b1b] font-bold text-sm mt-1">
-                (555) 019-9111 · Ext. 9111
+                (0129) 4259-111 · Ext. 4111
               </div>
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
               <button
-                onClick={() => handleCopy('(555) 019-9111')}
+                onClick={() => handleCopy('(0129) 4259-111')}
                 className="p-2 border border-[#991b1b]/30 bg-white hover:bg-slate-50 cursor-pointer"
                 title="Copy phone"
               >
-                {copiedNumber === '(555) 019-9111' ? (
+                {copiedNumber === '(0129) 4259-111' ? (
                   <Check className="w-3.5 h-3.5 text-[#065f46]" />
                 ) : (
                   <Copy className="w-3.5 h-3.5 text-[#1a1a1a]" />
                 )}
               </button>
               <a
-                href="tel:5550199111"
+                href="tel:01294259111"
                 className="px-3 py-2 bg-[#991b1b] text-white font-mono-space hover:bg-[#7f1d1d] uppercase transition-colors"
               >
                 Call
@@ -81,33 +81,33 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({ isOpen, onClose 
             </div>
           </div>
 
-          {/* Mental Health Crisis */}
+          {/* DSW Student Care & Psychological Wellness */}
           <div className="p-4 border border-[#a37d58]/40 bg-[#fffdf9] flex items-center justify-between gap-4">
             <div>
               <div className="font-serif-cormorant text-xl font-bold text-[#1a1a1a]">
-                24/7 Mental Health Crisis
+                Dean Student Welfare (DSW) Helpline
               </div>
               <div className="text-[#666] text-[11px] mt-0.5">
-                Confidential licensed psychological intervention
+                Block J, Room 102 · Confidential mental health & student crisis support
               </div>
               <div className="font-mono-space text-[#a37d58] font-bold text-sm mt-1">
-                (555) 019-CARE (2273)
+                (0129) 4259-251 · Ext. 2510
               </div>
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
               <button
-                onClick={() => handleCopy('(555) 019-CARE')}
+                onClick={() => handleCopy('(0129) 4259-251')}
                 className="p-2 border border-[#a37d58]/40 bg-white hover:bg-slate-50 cursor-pointer"
               >
-                {copiedNumber === '(555) 019-CARE' ? (
+                {copiedNumber === '(0129) 4259-251' ? (
                   <Check className="w-3.5 h-3.5 text-[#065f46]" />
                 ) : (
                   <Copy className="w-3.5 h-3.5 text-[#1a1a1a]" />
                 )}
               </button>
               <a
-                href="tel:5550192273"
+                href="tel:01294259251"
                 className="px-3 py-2 bg-[#1a1a1a] text-white font-mono-space hover:bg-black uppercase transition-colors"
               >
                 Call
@@ -115,33 +115,33 @@ export const EmergencyModal: React.FC<EmergencyModalProps> = ({ isOpen, onClose 
             </div>
           </div>
 
-          {/* Anti-Ragging Cell */}
+          {/* Anti-Ragging & Student Ombudsman */}
           <div className="p-4 border border-[rgba(26,26,26,0.12)] bg-white flex items-center justify-between gap-4">
             <div>
               <div className="font-serif-cormorant text-xl font-bold text-[#1a1a1a]">
-                Anti-Harassment Ombudsman
+                Anti-Ragging Cell & Student Ombudsman
               </div>
               <div className="text-[#666] text-[11px] mt-0.5">
-                Anonymous grievance & student welfare protection
+                Zero-tolerance UGC & MRU Proctorial Board helpline (24/7 Toll-Free)
               </div>
               <div className="font-mono-space text-[#1a1a1a] font-bold text-sm mt-1">
-                (555) 019-SAFE (7233)
+                1800-180-5522 · antiragging@mru.edu.in
               </div>
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
               <button
-                onClick={() => handleCopy('(555) 019-SAFE')}
+                onClick={() => handleCopy('1800-180-5522')}
                 className="p-2 border border-[rgba(26,26,26,0.12)] bg-white hover:bg-slate-50 cursor-pointer"
               >
-                {copiedNumber === '(555) 019-SAFE' ? (
+                {copiedNumber === '1800-180-5522' ? (
                   <Check className="w-3.5 h-3.5 text-[#065f46]" />
                 ) : (
                   <Copy className="w-3.5 h-3.5 text-[#1a1a1a]" />
                 )}
               </button>
               <a
-                href="tel:5550197233"
+                href="tel:18001805522"
                 className="px-3 py-2 bg-[#1a1a1a] text-white font-mono-space hover:bg-black uppercase transition-colors"
               >
                 Call

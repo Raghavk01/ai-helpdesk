@@ -31,15 +31,15 @@ export const Directory: React.FC = () => {
   return (
     <div className="w-full">
       {/* Editorial Hero */}
-      <div className="py-16 sm:py-20 px-6 sm:px-10 text-center border-b border-[rgba(26,26,26,0.08)] bg-[#fdfdfc]">
-        <span className="font-mono-space text-[#a37d58] tracking-[0.14em] block mb-2 font-semibold">
-          Department Contacts & Office Hours
+      <div className="py-16 sm:py-20 px-6 sm:px-10 text-center border-b border-[rgba(26,26,26,0.08)] bg-[#fdfcf9]">
+        <span className="font-mono-space text-[#c43a3a] tracking-[0.14em] block mb-2 font-semibold">
+          Manav Rachna University · Sector 43, Faridabad
         </span>
-        <h1 className="font-serif-cormorant text-4xl sm:text-6xl md:text-[4.5rem] font-light tracking-tight text-[#1a1a1a] leading-tight my-4">
-          Campus Directory
+        <h1 className="font-serif-cormorant text-4xl sm:text-6xl md:text-[4.5rem] font-light tracking-tight text-[#1a1a1a] leading-tight my-4 italic">
+          Department Directory & Offices
         </h1>
-        <p className="text-sm sm:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed">
-          Official departmental contacts, room locations, office hours, and online appointment scheduling.
+        <p className="text-sm sm:text-lg text-[rgba(26,26,26,0.6)] max-w-2xl mx-auto leading-relaxed">
+          Official departmental contacts, dean secretariats, block room numbers, office hours, and online appointment scheduling.
         </p>
       </div>
 

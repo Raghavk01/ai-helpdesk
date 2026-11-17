@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type NavTab = 'ai-desk' | 'tickets' | 'kb' | 'gpa' | 'map' | 'directory';
+export type NavTab = 'home' | 'events' | 'ai-desk' | 'tickets' | 'kb' | 'gpa' | 'map' | 'directory';
 
 interface NavbarProps {
   activeTab: NavTab;
@@ -18,45 +18,75 @@ export const Navbar: React.FC<NavbarProps> = ({
     <>
       {/* Top Notice */}
       <div className="bg-[#111111] text-[#ffffff] text-[0.7rem] py-2.5 px-6 sm:px-10 text-center tracking-[0.05em]">
-        Fall Semester 2026 Add/Drop Window Closes Friday at 5:00 PM • Library Study Hall Open 24/7
+        Manav Rachna University, Faridabad • Central Library Block H Open 24/7 • Admissions & Helpdesk Block A
       </div>
 
       {/* Editorial Header */}
       <header className="px-6 sm:px-10 py-6 sm:py-7 flex flex-col md:flex-row md:items-end justify-between gap-5 border-b border-[rgba(26,26,26,0.08)] bg-[#fdfcf9]">
         <div
-          onClick={() => setActiveTab('tickets')}
+          onClick={() => setActiveTab('home')}
           className="font-serif-cormorant text-3xl sm:text-[2.2rem] font-semibold leading-none tracking-[-0.02em] text-[#1a1a1a] cursor-pointer"
         >
-          Southfield College
+          Manav Rachna University
         </div>
 
-        <nav className="flex items-center gap-6 sm:gap-7 overflow-x-auto no-scrollbar">
+        <nav className="flex items-center gap-5 sm:gap-7 overflow-x-auto no-scrollbar">
           <button
-            onClick={() => setActiveTab('ai-desk')}
+            onClick={() => setActiveTab('home')}
             className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
-              activeTab === 'ai-desk'
-                ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
+              activeTab === 'home'
+                ? 'text-[#c43a3a] font-bold underline underline-offset-4 decoration-2'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
             }`}
           >
-            AI Assistant
+            Home & Gallery
+          </button>
+          <button
+            onClick={() => setActiveTab('events')}
+            className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
+              activeTab === 'events'
+                ? 'text-[#c43a3a] font-bold underline underline-offset-4 decoration-2'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
+            }`}
+          >
+            Campus Events (Blocks A-S)
           </button>
           <button
             onClick={() => setActiveTab('tickets')}
             className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
               activeTab === 'tickets'
                 ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
             }`}
           >
-            Tickets & Grievances
+            Grievances & Tickets
+          </button>
+          <button
+            onClick={() => setActiveTab('ai-desk')}
+            className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
+              activeTab === 'ai-desk'
+                ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
+            }`}
+          >
+            AI Assistant
+          </button>
+          <button
+            onClick={() => setActiveTab('map')}
+            className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
+              activeTab === 'map'
+                ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
+            }`}
+          >
+            Blocks Map (A-S)
           </button>
           <button
             onClick={() => setActiveTab('kb')}
             className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
               activeTab === 'kb'
                 ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
             }`}
           >
             Knowledge
@@ -66,27 +96,17 @@ export const Navbar: React.FC<NavbarProps> = ({
             className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
               activeTab === 'gpa'
                 ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
             }`}
           >
-            GPA
-          </button>
-          <button
-            onClick={() => setActiveTab('map')}
-            className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
-              activeTab === 'map'
-                ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
-            }`}
-          >
-            Map
+            GPA Tool
           </button>
           <button
             onClick={() => setActiveTab('directory')}
             className={`text-[0.8rem] font-medium transition-colors cursor-pointer whitespace-nowrap bg-transparent border-none ${
               activeTab === 'directory'
                 ? 'text-[#1a1a1a] font-semibold underline underline-offset-4 decoration-1'
-                : 'text-[rgba(26,26,26,0.5)] hover:text-[#1a1a1a]'
+                : 'text-[rgba(26,26,26,0.55)] hover:text-[#1a1a1a]'
             }`}
           >
             Directory

@@ -10,12 +10,12 @@ interface AIDeskProps {
 }
 
 const SUGGESTED_PROMPTS = [
-  'How do I request an official academic transcript?',
-  'What are the deadlines for the 3-installment tuition plan?',
-  'How to apply for a room swap in Southfield residence halls?',
-  'How do I connect my laptop to campus eduroam Wi-Fi?',
-  'Centennial Library quiet study room reservation rules',
-  'What are the minimum GPA requirements for Dean’s List?',
+  'Which block has the Central Library and what are the hours?',
+  'What are the 4 Student Clans and how to earn clan points?',
+  'How do I request an official transcript from Block A Registrar?',
+  'Where is the Robotics Lab and AI Center of Excellence located?',
+  'What are the dates and venue for Resurrection 2026 fest?',
+  'How do I register for events in Block M Auditorium?',
 ];
 
 export const AIDesk: React.FC<AIDeskProps> = ({ onConvertChatToTicket }) => {
@@ -23,9 +23,9 @@ export const AIDesk: React.FC<AIDeskProps> = ({ onConvertChatToTicket }) => {
     {
       id: 'welcome',
       role: 'model',
-      text: "Hello! I am Southfield College's 24/7 AI Desk Assistant. I can assist you with course prerequisite waivers, deferred tuition schedules, merit scholarship eligibility, library study pod reservations, campus Wi-Fi, or residential hall regulations. What can I help clarify today?",
+      text: "Namaste! I am Manav Rachna University's 24/7 AI Desk Assistant. I can assist you with campus events, navigating Blocks A through S, the Clan system (Wild Cats, Forest Rhinos, Air Falcons, Water Sharks), course registrations on iCloudEMS, library hours in Block H, or DSW initiatives. How can I assist you today?",
       timestamp: 'Just now',
-      sources: ['Southfield Academic Catalog', 'Student Services Welcome Center'],
+      sources: ['Manav Rachna University Catalog', 'Department of Student Welfare (Block J)'],
     },
   ]);
   const [input, setInput] = useState('');
@@ -154,15 +154,15 @@ export const AIDesk: React.FC<AIDeskProps> = ({ onConvertChatToTicket }) => {
   return (
     <div className="w-full">
       {/* Editorial Hero Banner */}
-      <div className="py-16 sm:py-20 px-6 sm:px-10 text-center border-b border-[rgba(26,26,26,0.08)] bg-[#fdfdfc]">
-        <span className="font-mono-space text-[#a37d58] tracking-[0.14em] block mb-2 font-semibold">
+      <div className="py-16 sm:py-20 px-6 sm:px-10 text-center border-b border-[rgba(26,26,26,0.08)] bg-[#fdfcf9]">
+        <span className="font-mono-space text-[#c43a3a] tracking-[0.14em] block mb-2 font-semibold">
           Intelligent Campus Advisory
         </span>
-        <h1 className="font-serif-cormorant text-4xl sm:text-6xl md:text-[4.5rem] font-light tracking-tight text-[#1a1a1a] leading-tight my-4">
-          Ask Southfield AI Desk
+        <h1 className="font-serif-cormorant text-4xl sm:text-6xl md:text-[4.5rem] font-light tracking-tight text-[#1a1a1a] leading-tight my-4 italic">
+          Ask Manav Rachna AI Desk
         </h1>
-        <p className="text-sm sm:text-lg text-[#666] max-w-2xl mx-auto leading-relaxed">
-          Instant answers grounded in official Southfield University regulations, tuition schedules, degree requirements, and residential policies.
+        <p className="text-sm sm:text-lg text-[rgba(26,26,26,0.6)] max-w-2xl mx-auto leading-relaxed">
+          Instant answers grounded in official Manav Rachna University regulations, campus events, blocks A to S, clans, and examination procedures.
         </p>
       </div>
 
@@ -340,7 +340,7 @@ export const AIDesk: React.FC<AIDeskProps> = ({ onConvertChatToTicket }) => {
             </form>
             <div className="mt-2 flex justify-between font-mono-space text-[#888]">
               <span>Enter to send · Shift+Enter for newline</span>
-              <span>Southfield College :: 2026-2027 Knowledge Base</span>
+              <span>Manav Rachna University :: 2026-2027 Academic & Events Portal</span>
             </div>
           </div>
         </div>
